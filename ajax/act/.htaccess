@@ -1,0 +1,15 @@
+# FOR URL REWRITING
+# PG
+<IfModule mod_rewrite.c>
+RewriteEngine on
+
+# for insert message
+RewriteRule ^im/?$ insert_message.xhr.php
+
+# for insert subscribe
+RewriteRule ^insub/?$ insert_subscribe.xhr.php
+
+# for process donate data
+RewriteRule ^pdd/?$ process_donate_data.xhr.php
+
+</IfModule>

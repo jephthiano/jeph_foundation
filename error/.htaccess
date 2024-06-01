@@ -1,0 +1,10 @@
+# FOR URL REWRITING
+<IfModule mod_rewrite.c>
+RewriteEngine on
+
+# for search
+RewriteRule ^tm/?$ timeout.php
+
+# for index
+RewriteRule ^([\w]*)/?$ index.php
+</IfModule>

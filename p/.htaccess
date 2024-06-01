@@ -1,0 +1,12 @@
+# FOR URL REWRITING
+# PG
+<IfModule mod_rewrite.c>
+RewriteEngine on
+
+# programme
+RewriteRule ^programme/([\d]*)/?$ programme.enc.php?page=$1
+
+# for programme details
+RewriteRule ^p/([\w\+\s\/\-\&\,\;\'\:]*)/?$ p.enc.php?title=$1
+
+</IfModule>

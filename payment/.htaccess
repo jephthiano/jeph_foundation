@@ -1,0 +1,14 @@
+# FOR URL REWRITING
+# PG
+<IfModule mod_rewrite.c>
+RewriteEngine on
+
+# for confirm_payment
+RewriteRule ^confirm_payment/?$ confirm_payment.enc.php
+
+# for initialize_payment
+RewriteRule ^initialize_payment/?$ initialize_payment.enc.php
+
+# for donate
+RewriteRule ^donate/?$ donate.enc.php
+</IfModule>

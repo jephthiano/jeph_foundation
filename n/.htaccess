@@ -1,0 +1,12 @@
+# FOR URL REWRITING
+# PG
+<IfModule mod_rewrite.c>
+RewriteEngine on
+
+# newsss
+RewriteRule ^news/([\d]*)/?$ news.enc.php?page=$1
+
+# for news details
+RewriteRule ^n/([\w\+\s\/\-\&\,\;\'\:]*)/?$ n.enc.php?title=$1
+
+</IfModule>
